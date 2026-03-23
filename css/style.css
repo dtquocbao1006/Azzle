@@ -1,3 +1,9 @@
+:root {
+  --bs-cream: #efeae3;
+  --bs-orange: #fe330a;
+}
+
+
 .web-head{
     background-color: #EFEAE3;
     padding: 10px 20px;
@@ -19,10 +25,12 @@
 .web-head .signlog{
     margin-top: -32px;
 }
+
 .web-head .first a{
     text-decoration: none;
     font-weight: 700;
     color: black;
+    transition: all 1s;
 }
 .web-head .second a{
     text-decoration: none;
@@ -32,10 +40,30 @@
 .web-head .first button{
     background-color: #EFEAE3;
     border: 0.5px solid black;
-}    
+    transition: all 1s;
+}
+
+.web-head .first button:hover{
+    background-color: var(--bs-orange);
+    border-color: var(--bs-orange);
+}
+.web-head .first button:hover,
+.web-head .first a:hover{
+color: white; 
+transition: all 1s;
+}
+
+
 .web-head .second button{
     background-color: black;
     border: none;
+    transition: all 1s;
+}
+
+.web-head .second button:hover{
+    transition: all 1s;
+    background-color: var(--bs-orange);
+
 }
 .web-head .navbar-nav{
     gap: 2vw;  
@@ -119,13 +147,20 @@
     gap: 15px;
     margin: 20px 0px 10px 0px;
 }
-.simplify .extrabutton .firsty{
-    display: flex;
+.simplify .extrabutton .firsty{   
     color: white;
     background-color: black;
     border-radius: 50rem;
     align-items: center;
     padding: 18px 28px 18px 28px;
+    cursor: pointer;
+    transition: all 1s;
+}
+
+.simplify .extrabutton .firsty:hover{
+    transition: all 1s;
+    background-color: var(--bs-orange);
+
 }
 .simplify .extrabutton .firsty h6{
     font-weight: 700;
@@ -133,17 +168,26 @@
     font-size: 18px;
 }
 .simplify .extrabutton .secondy{
-    display: flex;
     color: black;
     border-radius: 50rem;
     border: 2px solid black;
     align-items: center;
     padding: 18px 28px 18px 28px;
+    cursor: pointer;
+    transition: all 1s;
+}
+
+.simplify .extrabutton .secondy:hover{
+    transition: all 1s;
+    background-color: var(--bs-orange);
+    color: white;
+    border-color: var(--bs-orange);
 }
 .simplify .extrabutton .secondy h6{
     font-weight: 700;
     margin-bottom: 0;
     font-size: 18px;
+    text-align: center;
 }
 .simplify img{
     margin-top: 50px;
@@ -224,11 +268,22 @@
     border-bottom: 2.5px solid black;
     border-right: 2.5px solid black;
 }
+
+/*.features .col:hover{
+    background-color: black;
+    color: white;
+    transition: all 1s;
+}*/
+
 .features .row .col{
     display: flex;
     flex-direction: column;
-    border-right: 2.5px solid #000000;
+    /*border-right: 2.5px solid #000000;*/
     align-items: flex-start;
+}
+
+.inner-border {
+  box-shadow: inset 0 0 0 1px #000;
 }
 .features .container{
     max-width: 88vw;

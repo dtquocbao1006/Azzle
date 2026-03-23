@@ -1,6 +1,22 @@
-:root{
-    --bs-theme-orange: 254, 51, 10;
+:root {
+  --bs-cream: #efeae3;
+  --bs-orange: #fe330a;
+
+  .text-orange {
+  color: var(--bs-orange);}
+
+  .bg-orange{
+    background-color: var(--bs-orange) ;
+  }
+  .bg-cream{
+    background-color: var(--bs-cream) ;
+  }
+  .text-cream {
+  color: var(--bs-cream);
 }
+  
+}
+
 
 .streamline .container{
     background: black;
@@ -38,37 +54,25 @@
     border-radius: 15px;
 }
 
+.cost .nav-link:hover{
+  color: var(--bs-orange);
+}
+
 .cost .card .btn:hover{
     background-color: #FE330A;
     transition: all 1s;
     cursor: pointer;
-    /*animation: fade-down 1.5s;*/
-
 }
 
 .cost .card .btn{
     transition: all 1s;
 }
 
-/* @keyframes fade-down {
-  /*fade=down: tên keyframe, đặt gì cũng đc miễm ngắn dễ đọc hiểu
-  0% {
-    transform: translateY(0px); /*trạng thái from-ít dùng từ from, dùng %
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(60px); /*trạng thái to-ít dùng từ to, dùng %
-    opacity: 1;
-  }
-} */
-
-
 
 .ask .btn:hover{
     background-color: #FE330A;
     transition: all 1s;
     cursor: pointer;
-    /*animation: fade-down 1.5s;*/
 
 }
 
@@ -83,6 +87,10 @@
 
 .accordion-button::after{
     background-image: url(/img/plus.png);
+}
+
+.feedback i{
+  color: var(--bs-orange)
 }
 
 /*animation wording*/
@@ -117,4 +125,21 @@
   to {
     transform: translateX(-33.3%);
   }
+}
+
+.footer-navbar a:hover{
+    color: #FE330A !important; 
+    transition: all 0.6s;
+}
+.footer-navbar a{
+    transition: all 0.6s;
+}
+
+.footer .subscribe button:hover{
+  background-color:#FE330A !important;
+  transition: all 0.6s;
+}
+
+.footer .subscribe button{
+    transition: all 0.6s;
 }
