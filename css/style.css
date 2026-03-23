@@ -4,17 +4,20 @@
     transition: padding 0.5s ease;
 }
 .web-head img{
-    height: 25px;
+    height: 22px;
     width: auto;
     margin-top: 0px;
 }
 .web-head button{
     border-radius: 50px;
-    padding: 15px 35px 15px 35px;
+    padding: 10px 30px 10px 30px;
     color: #EFEAE3;
     flex-shrink: 0;
     white-space: nowrap;
-    margin-top: 5px;
+    margin-top: -10px;
+}
+.web-head .signlog{
+    margin-top: -32px;
 }
 .web-head .first a{
     text-decoration: none;
@@ -35,7 +38,7 @@
     border: none;
 }
 .web-head .navbar-nav{
-    gap: 3vw;  
+    gap: 2vw;  
     margin-left: 13vw;
     margin-top: 10px;
 }
