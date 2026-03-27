@@ -18,24 +18,29 @@
 }
 .web-head .signlog{
     margin-top: -32px;
+    transition: 0.5s;
 }
 .web-head .first a{
     text-decoration: none;
     font-weight: 700;
     color: black;
+    transition: 0.5s;
 }
 .web-head .second a{
     text-decoration: none;
     font-weight: 700;
     color: white;
+    transition: 0.5s;
 }    
 .web-head .first button{
     background-color: #EFEAE3;
     border: 0.5px solid black;
+    transition: 0.5s;
 }    
 .web-head .second button{
     background-color: black;
     border: none;
+    transition: 0.5s;
 }
 .web-head .navbar-nav{
     gap: 2vw;  
@@ -70,6 +75,31 @@
         padding: 20px;
         gap: 15px;
     }
+}
+.web-head .signlog:hover a{
+    color: white;
+    transition: 0.5s ;   
+}
+.web-head .signlog .first:hover button,
+.web-head .signlog .second:hover button{
+    background-color: #FE330A;
+}
+.web-head .signlog .first:hover button{
+    border: 0.5px solid #FE330A;
+    transition: 0.5s;
+}
+.hero .firsty:hover h6,
+.hero .secondy:hover h6{
+    color: white;
+    transition: 0.5s;
+}
+.hero .firsty:hover,
+.hero .secondy:hover{
+    background-color: #FE330A !important;
+}
+.hero .secondy:hover{
+    border: 2px solid #FE330A !important;
+    transition: 0.5s;
 }
 /* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 /* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
@@ -118,6 +148,7 @@
 .simplify .extrabutton{
     gap: 15px;
     margin: 20px 0px 10px 0px;
+    transition: 0.5s;
 }
 .simplify .extrabutton .firsty{
     display: flex;
@@ -126,11 +157,13 @@
     border-radius: 50rem;
     align-items: center;
     padding: 18px 28px 18px 28px;
+    transition: 0.5s;
 }
 .simplify .extrabutton .firsty h6{
     font-weight: 700;
     margin-bottom: 0;
     font-size: 18px;
+    transition: 0.5s;
 }
 .simplify .extrabutton .secondy{
     display: flex;
@@ -139,15 +172,17 @@
     border: 2px solid black;
     align-items: center;
     padding: 18px 28px 18px 28px;
+    transition: 0.5s;
 }
 .simplify .extrabutton .secondy h6{
     font-weight: 700;
     margin-bottom: 0;
     font-size: 18px;
+    transition: 0.5s;
 }
 .simplify img{
     margin-top: 50px;
-    width: clamp(0px, 95vw, 1450px);
+    width: clamp(0px, 95vw, 1300px);
     height: auto;
     border-radius: 15px;
     margin-bottom: clamp(20px,5vw,50px);
@@ -271,6 +306,19 @@
     .features .row .col-md-6:nth-child(2n) {
         border-right: none;
     }
+}
+.features .col:hover{
+    background-color: black;
+    transition: 0.5s;
+}
+.features .col:hover img{
+    filter: invert(21%) sepia(100%) saturate(7414%) hue-rotate(359deg) brightness(94%) contrast(117%);
+
+}
+.features .col:hover h3,
+.features .col:hover p{
+    color: white;
+    transition: 0.5s;
 }
 /* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 /* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
